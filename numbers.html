@@ -1,0 +1,29 @@
+<HTML>
+<body>
+<script>
+//Thousands
+var num = prompt("give me a number...any number...4 digits max though");
+var thou_mod = num % 1000;
+var thou_even = num - thou_mod;
+var thou = thou_even/1000;
+console.log("This number has " + thou + " thousand(s)");
+
+//Hundreds
+var hun_mod = thou_mod % 100;
+var hun_even = thou_mod - hun_mod;
+var hun = hun_even/100;
+console.log("This number has " + hun + " hundred(s)");
+
+//Tens
+var ten_mod = hun_mod % 10
+var ten_even = hun_mod - ten_mod;
+var ten = ten_even/10;
+console.log("This number has " + ten + " ten(s)");
+
+//Ones
+var one_mod = ten_mod % 1;
+var one = ten_mod - one_mod;
+console.log("This number has " + one + " ones)");
+</script>
+</body>
+</HTML>
